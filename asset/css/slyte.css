@@ -1,0 +1,154 @@
+body {
+    background-color: #009999;
+    padding: 40px;
+}
+
+.avatar {
+    border-radius: 100px;
+}
+
+h3 {
+    color: aliceblue;
+    font-family: 'Dancing Script', cursive;
+}
+
+p {
+    font-size: 15px;
+    font-family: 'Dancing Script', cursive;
+    color: aliceblue;
+}
+
+.button {
+    background-color: white;
+    margin-bottom: 20px;
+    border: 0px;
+    width: 300px;
+    padding: 15px 0 15px 0;
+    border-radius: 100px;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 15px;
+    -webkit-box-shadow: 6px 3px 9px 0px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 6px 3px 9px 0px rgba(0, 0, 0, 0.75);
+    box-shadow: 6px 3px 9px 0px rgba(0, 0, 0, 0.75);
+
+}
+
+.button:hover {
+    cursor: pointer;
+    background-color: rgba(43, 43, 64, 0.582);
+    color: white;
+}
+.back-video{
+    
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+}
+
+.colums {
+    width: 200px;
+    position: absolute;
+    top: 30%;
+}
+
+.let-col {
+    margin-left: 5%;
+}
+
+.let-col h1 {
+    display: inline-block;
+    font: bold 4.5em/1.5 Bebas, sans-serif;
+    color: #5CA17C;
+    /*non-webkit fallback*/
+    font-size: 72px;
+    text-transform: uppercase;
+    background-image: linear-gradient(to bottom, #26BDA6, #FF9F65, #DED37E, #26BDA6);
+    background-size: auto 250%;
+    transition: background-position 0.5s;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    line-height: 200px;
+    background-position: 0 100%;
+    font-size: 70px;
+    line-height: 100px;
+    font-family: sans-serif;
+}
+h1:hover {
+    background-position: 0 0;
+    cursor: pointer;
+  }
+
+.right-col {
+    float: right;
+    display: flex;
+    align-items: center;
+    margin-right: -4%;
+    background-image: linear-gradient(to bottom, #26BDA6, #FF9F65, #DED37E, #26BDA6);
+    background-size: auto 250%;
+    transition: background-position 0.5s;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    
+    
+}
+/* reposise PC*/
+@media (min-width: 1024) {
+     
+}
+/* reposise ipad*/
+@media (min-width: 740px) and (max-width: 1023px) {
+    .back-video{
+        z-index: -1;
+        display: none;
+    }
+    .right-col {
+        display: none;
+       
+    }
+    .let-col {
+        display: none;
+    }
+}
+/* .right-col {
+    float: left;
+    margin-top: 102%;
+}
+.let-col {
+    display: none;
+} */
+ 
+
+/* reposise mobile*/
+@media  (max-width: 740px) {
+    .back-video{
+        z-index: -1;
+        display: none;
+    }
+    .right-col {
+        display: none;
+       
+    }
+    .let-col {
+        display: none;
+    }
+    
+}
+/* .right-col {
+    margin-top: 278px;
+}
+.let-col {
+    display: none;
+} */
+
+.right-col p {
+    font-size: 18px;
+    color: black;
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+#icon {
+    width: 80px;
+    cursor: pointer;
+}

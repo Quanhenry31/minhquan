@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quân đẹp zai</title>
+    <link rel="stylesheet" href="asset/css/slyte.css">
+    <script src="index.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Roboto+Condensed:wght@700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="./asset/font/fontawesome-free-6.1.1-web/fontawesome-free-6.1.1-web/css/all.min.css">
+    <link rel="icon" href="./asset/css/images/icon.png">
+    <meta name="apple-mobile-web-app-status-bar-style" content="blue">
+</head>
+
+<body>
+    <video autoplay loop muted plays-inline class="back-video">
+        <source src="./asset/css/video/Visuals - Your Name (4K)_Trimm.mp4" type="video/mp4">
+    </video>
+    <div id="abc" class="hero">
+        <center>
+            <img class="avatar"
+                src="https://scontent.xx.fbcdn.net/v/t1.15752-9/282216186_2707900766020718_7511438648611295921_n.jpg?stp=dst-jpg_p403x403&_nc_cat=106&ccb=1-7&_nc_sid=aee45a&_nc_ohc=2FA4YKelWZwAX8T-uBE&_nc_ad=z-m&_nc_cid=0&_nc_ht=scontent.xx&oh=03_AVKBXeIF51CEwlsI4n06fqUgdhNXoPS_vHO219ZJhM0q9g&oe=62C365AE"
+                width="150px">
+            <h3>Trần Bá Minh Quân</h3>
+            <p>Hí AE</p>
+            <button class="button" onclick="location.href='https://www.facebook.com/profile.php?id=100010934737654'">
+                <i class="fa-brands fa-facebook"></i>
+                Facebook
+            </button><br>
+
+            <button class="button" onclick="location.href='https://www.instagram.com/quanba33/'">
+                <i class="fab fa-instagram"></i>
+                Instagram</button><br>
+
+            <button class="button"
+                onclick="location.href='https://www.youtube.com/channel/UCE3tHOnZcg-ZTJeK5AqZOxQ/featured'">
+                <i class="fab fa-youtube"></i>
+                YouTube</button><br>
+
+            <button class="button"
+                onclick="location.href='https://i.pinimg.com/originals/ac/90/e0/ac90e039e86823543e8623cbc31516d7.jpg'">
+                <i class="fas fa-phone-alt"></i>
+                Liên hệ</button>
+        </center>
+    </div>
+    </div>
+    <div class="colums">
+        <div class="let-col">
+            <h1>Someday <br> The Boy</h1>
+        </div>
+        <div class="right-col">
+            <p>Click To Play</p>
+            <img src="./play.png" id="icon">
+        </div>
+    </div>
+
+
+    <audio id="song">
+        <source src="./asset/css/music/[MV]  -    [  OST Part.6 (ITAEWON CLASS OST Part.6)].mp3" type="audio/mp3">
+    </audio>
+
+    <script>
+        // phat nhac
+        var song = document.getElementById("song")
+        var icon = document.getElementById("icon")
+        var abc = document.getElementById("abc")
+
+
+        icon.onclick = function () {
+            if (song.paused) {
+                song.play();
+                icon.src = "./pause.png";
+                document.getElementById("abc").style.display = "none";
+
+            } else {
+                song.pause();
+                icon.src = "./play.png";
+                document.getElementById("abc").style.display = "block";
+            }
+        }
+    </script>
+    </div>
+</body>
+
+</html>
